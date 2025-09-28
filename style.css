@@ -77,6 +77,8 @@ body {
   --container-1160: 196px;
   --container-768: 96px;
   --container-576: 108px;
+  --container-576: 19%;
+  --container-480: 5%;
   --container-390: 15px;
   --color-light: #ffffff;
   --color-accent: #ee753e;
@@ -617,6 +619,10 @@ img {
     margin-bottom: 20px;
   }
 
+  .header-logo {
+    margin-right: auto;
+  }
+
   .mobile-menu {
     width: 46px;
     height: 46px;
@@ -701,10 +707,17 @@ img {
   }
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding-left: var(--container-480);
+    padding-right: var(--container-480);
+  }
+}
+
 @media (max-width: 390px) {
   .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: var(--container-390);
+    padding-right: var(--container-390);
   }
 
   .nav {
